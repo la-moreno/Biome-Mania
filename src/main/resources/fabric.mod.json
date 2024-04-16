@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "biome-mania",
+	"version": "${version}",
+	"name": "Biome Mania",
+	"description": "This mod adds many biomes to minecraft!",
+	"authors": [
+		"Lucas M!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/biome-mania/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lm.biomemania.BiomeMania"
+		],
+		"client": [
+			"net.lm.biomemania.BiomeManiaClient"
+		],
+		"fabric-datagen": [
+			"net.lm.biomemania.BiomeManiaDataGenerator"
+		]
+	},
+	"mixins": [
+		"biome-mania.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
